@@ -1,0 +1,16 @@
+[project]
+name = "runelite-python"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "numpy>=2.1.2",
+    "pillow>=11.0.0",
+    "py4j>=0.10.9.7",
+    "pyautogui>=0.9.54",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
