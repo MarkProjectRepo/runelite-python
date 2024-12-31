@@ -9,6 +9,7 @@ from runelite_python.java.api.world import World
 from runelite_python.java.api.grandexchange import GrandExchangeOffer
 from runelite_python.java.api.coord.localpoint import LocalPoint
 from runelite_python.java.api.coord.worldpoint import WorldPoint
+from runelite_python.java.api.chat_line_buffer import ChatLineBuffer
 from runelite_python.java.helpers import wrap_getter
 
 class Client:
@@ -1131,14 +1132,15 @@ class Client:
         """
         self.client.refreshChat()
 
-    # def get_chat_line_map(self) -> Dict[int, ChatLineBuffer]:
-    #     """
-    #     Gets the map of chat buffers.
+    def get_chat_line_map(self) -> Dict[int, ChatLineBuffer]:
+        """
+        Gets the map of chat buffers.
 
-    #     Returns:
-    #         Dict[int, ChatLineBuffer]: The chat buffers.
-    #     """
-    #     return self.client.getChatLineMap()
+        Returns:
+            Dict[int, ChatLineBuffer]: The chat buffers.
+        """
+        return self.client.getChatLineMap()
+
 
     def get_messages(self):
         """

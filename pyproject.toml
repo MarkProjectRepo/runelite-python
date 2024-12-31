@@ -1,7 +1,7 @@
 [project]
 name = "runelite-python"
-version = "0.1.0"
-description = "Add your description here"
+version = "0.0.2"
+description = "Python bindings for RuneLite"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
@@ -14,3 +14,8 @@ dependencies = [
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
+
+[tool.uv]
+dev-dependencies = [
+    "twine>=6.0.1",
+]
