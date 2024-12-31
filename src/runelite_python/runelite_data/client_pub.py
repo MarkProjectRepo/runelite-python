@@ -1,4 +1,4 @@
-from runelite_python.client.publisher import Publisher
+from runelite_python.runelite_data.publisher import Publisher
 from runelite_python.client.client import ClientGateway
 from runelite_python.java.api.world_view import WorldView
 from runelite_python.java.clickqueue import ClickQueue

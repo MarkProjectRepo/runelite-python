@@ -1,4 +1,4 @@
-from runelite_python.client.subscriber import Subscriber
+from runelite_python.runelite_data.subscriber import Subscriber
 from typing import Callable
 
 class MasterSubscriber(Subscriber):

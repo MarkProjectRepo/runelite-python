@@ -1,4 +1,4 @@
-from runelite_python.client.publisher import Publisher
+from runelite_python.runelite_data.publisher import Publisher
 from runelite_python.java.api.player import Player
 from runelite_python.java.api.actor import Actor
 
