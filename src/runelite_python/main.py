@@ -5,7 +5,7 @@ from typing import Optional, List
 import time
 
 def initialize_publishers(client: Optional[ClientGateway] = None, 
-                        publisher_configs: Optional[List] = None):
+                          publisher_configs: Optional[List] = None):
     client = client if client else ClientGateway()
     publisher_configs = publisher_configs or get_enabled_publishers(['all'])
     
