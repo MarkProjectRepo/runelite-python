@@ -13,7 +13,6 @@ class EnumManager:
 
     def _load_enum(self, enum_name: str):
         try:
-            print(dir(self.gateway.jvm))
             enum_class = getattr(self.gateway.jvm.net.runelite.api, enum_name)
             self._enums[enum_name] = enum_class
         except AttributeError:

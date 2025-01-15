@@ -145,3 +145,6 @@ class MessageNode(Node):
             bool: True if the instance is None, False otherwise
         """
         return self.instance is not None
+    
+    def __str__(self):
+        return f"MessageNode(id={self.get_id()}, type={self.get_type()}, name={self.get_name()}, sender={self.get_sender()}, value={self.get_value()})"

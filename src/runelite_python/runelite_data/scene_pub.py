@@ -1,4 +1,4 @@
-from runelite_python.client.publisher import Publisher
+from runelite_python.runelite_data.publisher import Publisher
 from runelite_python.java.api.scene import Scene
 from runelite_python.java.api.tile import Tile
 from typing import List
